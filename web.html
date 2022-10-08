@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+    <div id="pop-div">
+        <ul  id="pop">
+            <li class="ball"  id="ball-1"></li>
+            <li class="ball" id="ball-2"></li>
+            <li class="ball" id="ball-3"></li>
+            <li class="ball" id="ball-4"></li>
+            <li class="ball" id="ball-5"></li>
+            <li class="ball" id="ball-6"></li>
+        </ul>
+    </div>
+    <div id="body">
+        <ul id="links">
+            <div id="locaters">
+                <div id="locater-1" class="locate" onmouseover="hover_1()" onmouseleave="unhover_1()">
+                    <a href="#">
+                        <img id='right-arrow-1'class='right-arrow'src='icons8-right-button-24.png'>
+                        <li id="home" class="link-text">home</li>
+                    </a>
+                </div>
+                <div id="locater-2" class="locate" onmouseover="hover_2()" onmouseleave="unhover_2()">
+                    <a href="#about">
+                        <img id='right-arrow-2'class='right-arrow'src='icons8-right-button-24.png'>
+                        <li id="home" class="link-text">about</li>
+                    </a>
+                </div>
+                <div id="locater-2" class="locate" onmouseover="hover_3()" onmouseleave="unhover_3()">
+                    <a href="#my-works">
+                        <img id='right-arrow-3'class='right-arrow'src='icons8-right-button-24.png'>
+                        <li id="home" class="link-text">my creations</li>
+                    </a>
+                </div>
+            </div>
+            <div id="social">
+                <div class="link-div">
+                    <a href="https://vsco.co/justiinb/gallery" target="_blank">
+                        <img class='link-img' id='vsco-img'src='vsco_logo_icon_144750.png'>
+                        <li id="vsco"class ='link-text'id="vsco-text">vsco</li>
+                    </a>
+                </div>
+                <div  class="link-div">
+                    <a href="#">
+                        <img class='link-img' src="snapchat_icon_138173.png">
+                        <li id='snap' class ='link-text'>snapchat</li>
+                    </a>
+                </div>
+                <div class="link-div">
+                    <a href="https://www.instagram.com/justinn.tm/" target="_blank">
+                        <img class='link-img' src='Instagram_icon-icons.com_66804.png'>
+                        <li id="insta" class ='link-text'>instagram</li>
+                    </a>
+                </div>
+            </div>
+        </ul>
+        <section id="container-1">
+            <div id="me-info">
+                <h1 id="waz-here" onload="waz()"><div id="cursor"></div> </h1>
+                <div id="for-fade">
+                    <h2 id="bday">born on <13/08/2005></h2>
+                    <h1 id="age">that makes me 17 right now.</h1><br>
+                    <p id="intro-text"> I am an aspiring software engineer, born and raised in Jamaica. I do graphic design and photography all while vibing to my precious music.   </p><br>
+                    <a href="mailto:justin670brown@gmail.com" ><button id ="btn-1" title= "Email">Say Hi!</button></a>
+                </div>
+            </div>
+
+        </section><br>
+        <section id="container-2">
+            <div id="about">
+                <h1 id="about-h1">about me :)<div id='abt-line'class="line"></div></h1>
+                <div id="me-div">
+                    <div id="abt-text">
+                        <p id="about-text">My name is Justin Brown. I am a former student of <a id="wbs" href="https://wolmers.org" target="_blank">Wolmer's Boy's HighSchool</a> and I currently attend the <a id="tec"href="http://www.utechjamaica.edu.jm/" target="_blank">University of Technology</a> studying Computer Science.  I am unsure about what aspect of development is for me but I do enjoy AI and web development. </p>
+                    </div>
+                <img id="me" src="me on car.jpeg"></div>
+                <div id="langs-texts">
+                    <p id="lang-abt">These are the languages I have worked with before:</p>
+
+                    <ul id="langs">
+                        <li class="program-lang" >C</li>
+                        <li class="program-lang">python</li>
+                        <li class="program-lang">javascript</li>
+                        <li class="program-lang">html</li>
+                        <li class="program-lang">css</li>
+                        <li class="program-lang">flutter</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id="container-3">
+            <div id='my-works'></div>
+            <h1 id="works-h1">my creations<div id='create-line' class="line"></div></h1>
+            <p></p>
+            <div id="collection">
+                <a class="box" id="photography" onmouseleave="hide()" onmouseover="show()" href="web ext\photography.html">
+                    
+                        <h1 id="photography-h1">photography</h1>
+                </a>
+                <a class ='box' id='graphics' onmouseleave="hide_2()" onmouseover="show_2()" href="web ext\graphics.html">
+            
+                        <h1 id="graphics-h1">graphic designs</h1>
+
+                </a>
+                <a class ='box' id='code' onmouseleave="hide_3()" onmouseover="show_3()" href="web ext\code.html">
+                        <h1 id="code-h1">code</h1>
+                </a>
+            </div>
+        </section>
+        <section>
+        </section>
+        <script src="web.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1131 @@
+/* Animations */
+@keyframes cursor {
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes fade {
+    0%{transform: translateY(10vh); opacity: 0;}
+    100%{transform: translateY(0vh); opacity: 1;}
+}
+@keyframes side{
+    0%{transform: translateX(10vh); opacity: 0;}
+    100%{transform: translateX(0vh); opacity: 1;}
+}
+@keyframes side-right{
+    0%{transform: translateX(-10vh); opacity: 0;}
+    100%{transform: translateX(0vh); opacity: 1;}
+}
+
+@keyframes hide {
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+@keyframes colorChange {
+    0%{
+        color: rgb(115, 27, 99);
+        background-color:rgb(229, 229, 229) ;
+    }
+    100%{
+        background-color: rgb(155, 39, 134);
+        color:rgb(229, 229, 229) ;
+    }
+}
+
+    @keyframes moveCircle {
+      0% {
+        transform: translate3d(var(--xA), var(--yA), 0);
+      }
+      100% {
+        transform: translate3d(var(--xB), var(--yB), 0);
+      }
+    }
+
+@font-face {
+    font-family: 'EuclidCircularA-Bold';
+    src: url('Euclid Circular A Bold.ttf');
+}
+a{
+    text-decoration: none;
+    color: rgb(207, 141, 208);
+
+}
+
+body{
+    overflow-x: hidden;
+    font-family:'EuclidCircularA-Bold', sans-serif;
+    color: rgb(115, 27, 99);
+    background-color: rgb(229, 229, 229);/* rgb(210, 210, 210) */
+    
+}
+ul{
+    list-style: none;
+}
+
+#pop{
+    position: absolute;
+    padding-top: 200px;
+    padding-right: 100%;
+    padding-bottom: 120%;
+
+    filter: blur(10px);
+    overflow: hidden;
+    margin-top:-30vh ;
+    z-index: -1;
+}
+.ball{
+    overflow: hidden;
+    opacity: .7;
+    
+
+      animation-name: moveCircle;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+    
+}
+#ball-1{
+    --xA: 10px;
+      --yA: 10px;
+      --xB: 30px;
+      --yB: 30px;
+      margin-top: 700px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: absolute;
+    animation-duration: 9s;
+    background-color: rgb(252, 128, 128);
+    animation-delay: 0s;
+
+}
+#ball-2{
+    --xA: 10px;
+      --yA: 10px;
+      --xB: 30px;
+      --yB: 30px;
+margin-top: 500px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: absolute;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    background-color: rgb(128, 149, 252);
+
+}
+#ball-3{
+    --xA: 10px;
+      --yA: 10px;
+      --xB: 30px;
+      --yB: 30px;
+    margin-top: 500px;
+    margin-left: 900px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: absolute;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    background-color: rgb(252, 229, 128);
+
+}
+#ball-4{
+    --xA: 20px;
+      --yA: 10px;
+      --xB: 30px;
+      --yB: 30px;
+    margin-top: 900px;
+    margin-left: 1000px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: absolute;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    background-color: rgb(128, 252, 153);
+
+}
+#ball-5{
+    --xA: 20px;
+      --yA: 10px;
+      --xB: 30px;
+      --yB: 30px;
+    margin-top: -90vh;
+    margin-left: 300px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: absolute;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    background-color: rgb(128, 252, 153);
+
+}
+#ball-6{
+    --xA: 20px;
+      --yA: 10px;
+      --xB: 30px;
+      --yB: 30px;
+    margin-top: -90vh;
+    margin-left: 900px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: absolute;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    background-color: rgb(252, 128, 213);
+
+}
+#container-1{
+    margin-top: 25vh;
+    padding-bottom: 5vh;
+    /* background-color: blue; */
+}
+#me-info{
+    margin-left: 18vw;
+
+}
+#for-fade{
+    animation: fade 1s  1;
+}
+#waz-here{
+    display: flex;
+    font-size: 8vh;
+    margin-bottom: -15px;
+}
+#cursor{
+    width: .5vw;
+    height: 8vh;
+    background-color: rgb(115, 27, 99);
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+#bday{
+    font-size: 5vh;
+    margin-bottom: -15px;
+    transition: text-shadow .5s ;
+}
+
+#intro-text{
+    font-size: 3vh;
+    margin-right: 40vw;
+    word-wrap: normal;
+    line-height: 2em;
+    text-align: justify;
+}
+#tec:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 5px ;
+}
+#wbs:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 5px ;
+}
+#btn-1{
+
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 5px;
+    border-color: rgb(115, 27, 99);
+    border-style: solid;
+    border-width: 4px;
+    color: rgb(115, 27, 99);
+    font-family: 'EuclidCircularA-Bold';
+    font-size: 2vh;
+    text-align: center;
+    padding: 20px 30px 20px 30px;
+    margin-top: -10vh;
+    background-image: url('nav-bg-fill-prp.png');
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: all 2s ease;
+    
+}
+
+    
+
+#btn-1:hover{
+    transform:translateY(-10px);
+    background-position: center;
+    color: antiquewhite;
+}
+
+#about{
+    margin-left: 18vw;
+    
+    /* background-color: aquamarine; */
+}
+
+#about-h1{
+    font-size: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+.line{
+    background-color:  rgb(115, 27, 99);
+    height: 2px;
+    width: 25vw;
+    margin-top: 4vh;
+    margin-left: 10px;
+}
+#about-text{
+    font-size: 3vh;
+    margin-right: 40vw;
+    word-wrap: normal;
+    line-height: 2em;
+    text-align:justify;
+}
+#lang-abt{
+    font-size: 3vh;
+    margin-right: 40vw;
+    word-wrap: normal;
+    line-height: 2em;
+    text-align:justify;
+    margin-top: -5%;
+}
+#langs-texts{
+    /* margin-top: -5vh; */
+    padding-top: 5%;
+}
+#langs{
+    height: 8vh;
+    width: 20vw;
+    font-size: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: -100px;
+    list-style:circle;
+}
+#links{
+    list-style: none;
+    top: 55vh;
+    left: 83vw;
+    position: fixed;
+    
+
+
+}
+
+.link-div{
+    display: flex;
+    
+
+}
+.link-div:hover{
+    color: rgb(207, 141, 208);
+}
+.link-img{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+}
+.link-text{
+    font-size: 80%;
+    margin-top: 0px;
+    margin-left: 40px;
+    padding-bottom: 20%;
+}
+#social{
+    padding-top: 5vh;
+    color: rgb(115, 27, 99);
+}
+#social:hover{
+    color: rgb(207, 141, 208);
+}
+.locate{
+    transition: all 1s;
+}
+.locate:hover{
+    cursor: pointer;
+}
+.right-arrow:hover{
+    content: url('icons8-right-button-24 (1).png');
+    cursor: pointer;
+}
+.right-arrow{
+    position: absolute;
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+}
+#home{
+    font-size: 100%;
+    
+    
+    padding: 0%;
+    margin-top: 10px;
+    margin-left: 25px;
+    color: rgb(115, 27, 99);
+    transition: color .3s;
+}
+#home:hover{
+    color: rgb(207, 141, 208);
+}
+#locater-1{
+    animation: side 1.2s 1;
+}
+#locater-2{
+    animation: side 1.4s 1;
+    color: black;
+}
+#social div:nth-child(1){
+    
+    animation: side 1.8s 1;
+
+}
+#social div:nth-child(2){
+    animation: side 2.2s 1;
+    
+    
+}
+#social div:nth-child(3){
+    animation: side 2.4s 1  ;
+
+    
+}
+
+#vsco{
+    color: rgb(115, 27, 99);
+    transition: color .3s;
+    margin-top: .1vh;
+    margin-left: 2vw;
+}
+#insta{
+    color: rgb(115, 27, 99);
+    transition: color .3s;
+    margin-top: .1vh;
+    margin-left: 2vw;
+}
+#snap{
+    color: rgb(115, 27, 99);
+    transition: color .3s;
+    margin-top: .1vh;
+    margin-left: 2vw;
+}
+#vsco:hover{
+    color:rgb(207, 141, 208);
+    text-shadow: none;
+
+}
+#insta:hover{
+    color:rgb(207, 141, 208);
+    text-shadow: none;
+
+}
+#snap:hover{
+    color:rgb(207, 141, 208);
+    text-shadow: none;
+} 
+
+#me-div{
+    display: flex;
+    flex-direction: row;
+    
+}
+#me{
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    margin-left: -35vw;
+    
+    transition: all .8s;
+
+}
+#me:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 20px rgb(115, 27, 99);
+    
+}
+#abt-text{
+    width: 70vw;
+}
+#container-3{
+    margin-left: 18vw;
+
+}
+#collection{
+    display: flex;
+    flex-direction: row;
+/* justify-content: space-between; */
+height: 30vh;
+margin-left: -3%;
+}
+
+#works-h1{
+    font-size: 5vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+.box{
+    /* background-color: rgb(152, 94, 142); */
+    margin-left: 3%;
+    padding-right: 20px;
+    margin-top: 2vh;
+    height: 100%;
+    width: 20%;
+    background: rgba(158, 10, 168, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: .5px solid rgba(205, 98, 212, 0.3);
+    transition: transform .5s ease-in;
+    
+}
+.box:hover{
+    transform: translateY(-20px);
+}
+#photography-h1{
+    margin-left: 10%;
+    margin-top: 10%;
+    color: transparent;
+    text-shadow: 0px 0px 4px rgb(115, 27, 99);
+    transition: text-shadow .8s;
+
+    
+
+}
+#graphics-h1{
+    margin-left: 10%;
+    margin-top: 10%;
+    color: transparent;
+    text-shadow: 0px 0px 4px rgb(115, 27, 99);
+    transition: text-shadow .8s;
+
+    
+}
+#code-h1{
+    margin-left: 10%;
+    margin-top: 10%;
+    color: transparent;
+    text-shadow: 0px 0px 4px rgb(115, 27, 99);
+    transition: text-shadow .8s;
+}
+@media screen and (max-width: 420px) and (min-width: 385px){
+    *{
+        animation: colorChange 7s ease-in-out 1s infinite alternate-reverse;
+    }
+    body{
+        overflow-x: hidden;
+
+    }
+    #locaters{
+        visibility: hidden;
+    }
+    #links{
+        visibility: hidden;
+    }
+
+#me-info{
+    padding-top: 10vh;
+    margin-left: 1%;
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: -190px;
+
+}
+
+#cursor{
+
+    height:40px;
+    width: 5px;
+}
+#waz-here{
+    font-size: 35px;
+    margin-left:12%;
+    
+}
+#bday{
+    
+    font-size: 20px;
+    margin-left:19%;
+    margin-top: -10px;
+}
+#age{
+    
+    font-size: 15px;
+    margin-left:20%;
+}
+#intro-text{
+    
+    font-size: 15px;
+    margin-left:10%;
+    margin-right: 55px;
+    text-align: center;
+    /* background-color: aqua; */
+}
+#btn-1{
+    
+    font-size: 15px;
+    margin-left: 36%;
+    padding: 10px 15px;
+    border-width: 3px;
+}
+
+#about-h1{
+    
+    font-size: 30px;
+    margin-left: -17%;
+}
+.line{
+    visibility: hidden;
+}
+
+#about-text{
+    
+    font-size: 15px;
+margin-left: 20%;
+margin-right: -80%;
+}
+#abt-text{
+    margin-left: -30%;
+    margin-right: 15%;
+    padding-bottom: 0px;
+}
+#me{
+    visibility: hidden;
+}
+#lang-abt{
+
+    margin-left: -18%;
+    margin-right: 15%;
+    margin-top: -15%;
+    font-size: 15px;
+
+}
+#langs{
+    font-size: 15px;
+    margin-right: 0%;
+    margin-left: -18%;
+    flex-wrap: nowrap;
+
+}
+#container-3{
+    padding-top: 10%;
+}
+#collection{
+    margin-left: -20%;
+}
+#works-h1{
+
+    font-size: 30px;
+    margin-left: -17%;
+}
+#photography-h1{
+    height: 12px;
+    width: 12px;
+    content: url('camera.png');
+}
+#graphics-h1{
+    height: 12px;
+    width: 12px;
+    content:url('paintbrush.png')
+}
+#code-h1{
+    height: 12px;
+    width: 12px;
+    content: url('coding.png');
+}
+
+.box{
+    height: 75%;
+}
+#vsco{
+    position: absolute;
+    visibility:hidden
+}
+#insta{
+    position: absolute;
+    visibility:hidden
+
+}
+#snap{
+    position: absolute;
+    visibility:hidden
+
+}
+#pop-div{
+    visibility: hidden;
+
+}
+}
+@media screen and (max-width: 384px) and (min-width: 0px){
+    *{
+        animation: colorChange 7s ease-in-out 1s infinite alternate-reverse;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #locaters{
+        visibility: hidden;
+
+    }
+#social{
+    visibility: hidden;
+}
+#me-info{
+    padding-top: 10vh;
+    margin-left: 1%;
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: -190px;
+}
+
+#cursor{
+
+    height:40px;
+    width: 5px;
+}
+#waz-here{
+    font-size: 35px;
+    margin-left:12%;
+    
+}
+#bday{
+    
+    font-size: 20px;
+    margin-left:19%;
+    margin-top: -10px;
+}
+#age{
+    
+    font-size: 15px;
+    margin-left:20%;
+}
+#intro-text{
+    
+    font-size: 15px;
+    margin-left:10%;
+    margin-right: 55px;
+    text-align: center;
+    /* background-color: aqua; */
+}
+#btn-1{
+    
+    font-size: 15px;
+    margin-left: 36%;
+    padding: 10px 15px;
+    border-width: 3px;
+}
+
+#about-h1{
+    
+    font-size: 30px;
+    margin-left: -17%;
+}
+.line{
+    visibility: hidden;
+}
+
+#about-text{
+
+    font-size: 15px;
+margin-left: 20%;
+margin-right: -100%;
+}
+#abt-text{
+    margin-left: -30%;
+    margin-right: 15%;
+    padding-bottom: 0px;
+}
+#me{
+    visibility: hidden;
+}
+#lang-abt{
+
+    margin-left: -18%;
+    margin-right: 15%;
+    margin-top: -15%;
+    font-size: 15px;
+
+}
+#langs{
+    font-size: 15px;
+    margin-right: 0%;
+    margin-left: -18%;
+    flex-wrap: nowrap;
+
+}
+#container-3{
+    padding-top: 10%;
+}
+#collection{
+    margin-left: -20%;
+}
+#works-h1{
+
+    font-size: 30px;
+    margin-left: -17%;
+}
+#photography-h1{
+    content: url('camera.png');
+    height: 12px;
+    width: 12px;
+}
+#graphics-h1{
+    content:url('paintbrush.png');
+    height: 12px;
+    width: 12px;
+    
+}
+#code-h1{
+    content: url('coding.png');
+    height: 12px;
+    width: 12px;
+}
+.box{
+    height: 75%;
+}
+#vsco{
+    position: absolute;
+    visibility:hidden
+}
+#insta{
+    position: absolute;
+    visibility:hidden
+
+}
+#snap{
+    position: absolute;
+    visibility:hidden
+
+}
+#pop-div{
+visibility: hidden;
+}}
+
+@media screen and (max-width: 919px) and (min-width: 720px){
+    *{
+        animation: colorChange 7s ease-in-out 1s infinite alternate-reverse;
+    }
+            body{
+                overflow-x: hidden;
+            }
+            #locaters{
+                visibility: hidden;
+            }
+        #me-info{
+            padding-top: 10vh;
+            margin-left: -2%;
+            overflow-x: hidden;
+            width: 100%;
+            margin-top: -190px;
+        }
+
+        #cursor{
+
+            height:40px;
+            width: 5px;
+        }
+        #waz-here{
+            font-size: 35px;
+            margin-left:36%;
+            
+        }
+        #bday{
+            
+            font-size: 20px;
+            margin-left:40%;
+            margin-top: -10px;
+        }
+        #age{
+            
+            font-size: 15px;
+            margin-left:40%;
+        }
+        #intro-text{
+            
+            font-size: 15px;
+            margin-left:20%;
+            margin-right: 55px;
+            text-align: center;
+            /* background-color: aqua; */
+        }
+        #btn-1{
+            
+            font-size: 15px;
+            margin-left: 48%;
+            padding: 10px 15px;
+            border-width: 3px;
+        }
+
+        #about-h1{
+            
+            font-size: 30px;
+            margin-left: 28%;
+
+        }
+        .line{
+            visibility: hidden;
+        }
+
+        #about-text{
+            
+            font-size: 15px;
+        margin-left: 20%;
+        margin-right: -40%;
+        text-align: center;
+        }
+        #abt-text{
+            margin-left: -30%;
+            margin-right: 15%;
+            padding-bottom: 0px;
+
+        }
+        #me{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            right: 220px;
+            top: 120px;
+            /* border-radius: 8px;
+            margin-left: -35vw;
+            
+            transition: all .8s; */
+        }
+        #lang-abt{
+
+            margin-left: -18%;
+            margin-right: 15%;
+            margin-top: -5%;
+            font-size: 15px;
+
+        }
+        #langs-texts{
+            padding-left: 40%;
+            display: flex;
+            margin-top: -10%;
+        }
+        #langs{
+            font-size: 15px;
+            margin-right: 0%;
+            margin-left: -60vw;
+flex-wrap: nowrap;
+
+gap: 25px;
+            flex-direction: row;
+        }
+
+        #container-3{
+            padding-top: 10%;
+        }
+        #collection{
+            margin-left: 0%;
+        }
+        #works-h1{
+
+            font-size: 30px;
+            margin-left: 23%;
+        }
+        #photography-h1{
+            height: 12px;
+    width: 12px;
+            content: url('camera.png');
+        }
+        #graphics-h1{
+            height: 12px;
+    width: 12px;
+            content:url('paintbrush.png')
+        }
+        #code-h1{
+            height: 12px;
+    width: 12px;
+            content: url('coding.png');
+        }
+        .box{
+            height: 75%;
+        }
+        #links{
+            visibility: hidden;
+        }
+        #vsco{
+            position: absolute;
+            visibility:hidden
+        }
+        #insta{
+            position: absolute;
+            visibility:hidden
+
+        }
+        #snap{
+            position: absolute;
+            visibility:hidden
+
+        }
+        #pop-div{
+            visibility: hidden;
+
+        }
+
+
+    }
+    @media screen and (max-width: 720px) and (min-width: 420px){
+        *{
+            animation: colorChange 7s ease-in-out 1s infinite alternate-reverse;
+        }
+                body{
+                    overflow-x: hidden;
+                }
+                #locaters{
+                    visibility: hidden;
+                }
+            #me-info{
+                padding-top: 10vh;
+                margin-left: -4%;
+                overflow-x: hidden;
+                width: 100%;
+                margin-top: -190px;
+            }
+    
+            #cursor{
+    
+                height:40px;
+                width: 5px;
+            }
+            #waz-here{
+                font-size: 35px;
+                margin-left:30%;
+                
+            }
+            #bday{
+                
+                font-size: 20px;
+                margin-left:35%;
+                margin-top: -10px;
+            }
+            #age{
+                
+                font-size: 15px;
+                margin-left:36%;
+            }
+            #intro-text{
+                
+                font-size: 15px;
+                margin-left:20%;
+                margin-right: 55px;
+                text-align: center;
+                /* background-color: aqua; */
+            }
+            #btn-1{
+                
+                font-size: 15px;
+                margin-left: 48%;
+                padding: 10px 15px;
+                border-width: 3px;
+            }
+    
+            #about-h1{
+                
+                font-size: 30px;
+                margin-left: 23%;
+    
+            }
+            .line{
+                visibility: hidden;
+            }
+    
+            #about-text{
+                
+                font-size: 15px;
+            margin-left: 20%;
+            margin-right: -40%;
+            text-align: center;
+            }
+            #abt-text{
+                margin-left: -30%;
+                margin-right: 15%;
+                padding-bottom: 0px;
+    
+            }
+            #me{
+                visibility: hidden;
+            }
+            #lang-abt{
+    
+                margin-left: -18%;
+                margin-right: 15%;
+                margin-top: -5%;
+                font-size: 15px;
+    
+            }
+            #langs-texts{
+                padding-left: 40%;
+                display: flex;
+                margin-top: -25%;
+                margin-left: -20vw;
+            }
+            #langs{
+                font-size: 15px;
+                margin-right: 0%;
+                margin-left: -80vw;
+                flex-wrap: nowrap;
+    
+            flex-wrap: nowrap;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+    
+            #container-3{
+                padding-top: 20%;
+            }
+            #collection{
+                margin-left: 0%;
+            }
+            #works-h1{
+    
+                font-size: 30px;
+                margin-left: 23%;
+            }
+            #photography-h1{
+                height: 12px;
+        width: 12px;
+                content: url('camera.png');
+            }
+            #graphics-h1{
+                height: 12px;
+        width: 12px;
+                content:url('paintbrush.png')
+            }
+            #code-h1{
+                height: 12px;
+        width: 12px;
+                content: url('coding.png');
+            }
+            .box{
+                height: 75%;
+            }
+            #links{
+                visibility: hidden;
+            }
+            #vsco{
+                position: absolute;
+                visibility:hidden
+            }
+            #insta{
+                position: absolute;
+                visibility:hidden
+    
+            }
+            #snap{
+                position: absolute;
+                visibility:hidden
+    
+            }
+            #pop-div{
+                visibility: hidden;
+    
+            }
+    
+    
+        }
+    
+        
